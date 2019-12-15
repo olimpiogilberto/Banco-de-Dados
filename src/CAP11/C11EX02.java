@@ -1,3 +1,5 @@
+package CAP11;
+
 import javax.swing.*;
 import java.awt.*;
 

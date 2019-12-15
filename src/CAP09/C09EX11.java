@@ -1,35 +1,19 @@
+package CAP09;
+
 import java.io.*;
 
+public class C09EX11 {
+	
+public static void main(String args[]) {
 
-class Tpai {
+	    TPai PAI = new TPai();
+	    TFilho FILHO = new TFilho();
 
-  protected void Executa() {
-    System.out.println("Acao na classe-pai");
-  }
+	    PAI.Executa();
+	    FILHO.Executa();
 
-}
-
-
-class Tfilho extends Tpai {
-
-  protected void Executa() {
-    System.out.println("Acao na classe-filho");
-  }
+	    PAI = FILHO;
+	    PAI.Executa();
 
 }
-
-
-class C09EX11 {
-  public static void main(String args[]) {
-
-    Tpai PAI = new Tpai();
-    Tfilho FILHO = new Tfilho();
-
-    PAI.Executa();
-    FILHO.Executa();
-
-    PAI = FILHO;
-    PAI.Executa();
-
-  }
 }

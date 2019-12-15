@@ -1,3 +1,5 @@
+package CAP09;
+
 public class Taluno5 extends Tsala2 {
 
   public String NOME;

@@ -1,3 +1,5 @@
+package CAP10;
+
 import java.io.*;
 import java.text.DecimalFormat;
 

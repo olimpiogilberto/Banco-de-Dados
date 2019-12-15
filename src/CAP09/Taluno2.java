@@ -1,3 +1,5 @@
+package CAP09;
+
 public class Taluno2 {
   String NOME;
   float MEDIA;

@@ -1,3 +1,5 @@
+package CAP10;
+
 import java.io.*;
 
 class C10EX09 {

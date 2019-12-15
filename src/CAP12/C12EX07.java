@@ -1,3 +1,4 @@
+package CAP12;
 import javax.swing.*;
 
 public class C12EX07 {

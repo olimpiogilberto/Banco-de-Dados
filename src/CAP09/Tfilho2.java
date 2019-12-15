@@ -1,11 +1,15 @@
-class Tfilho2 implements Tpai2, Tmae2 {
+package CAP09;
 
-  public String olhos() { 
-    return("claros");
-  }
+public class Tfilho2 {
 
-  public String cabelos() { 
-    return("cacheados");
-  }
+	public String olhos() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String cabelos() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }
