@@ -1,7 +1,5 @@
 package CAPAA;
 
-import java.io.*;
-
 class CAAEX01 {
 
   public static void main(String args[]) { 

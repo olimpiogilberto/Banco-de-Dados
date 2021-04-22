@@ -1,7 +1,5 @@
 package CAP14;
 
-import java.io.*;
-
 import br.com.editoraerica.livro.java.MateMax;
 
 class C14EX01 {
