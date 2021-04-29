@@ -1,13 +1,12 @@
 package CAP05;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
-public class C05EX7 {
+import java.io.*;
+public class C05EX9 {
 
 	public static void main(String[] args) {
 		
-		int A, B, C, X;
+		float A, B, R = 0;
+		int OPCAO;
 		
 	    System.out.println();
 	    
@@ -29,23 +28,34 @@ public class C05EX7 {
 				B = 0;
 			}
 		
-		System.out.print("Entre o valor <C>: ");
+		System.out.println();
+		System.out.print("[1] - Adição");
+		System.out.print("[2] - Subtração ");
+		System.out.print("[3] - Multiplicação ");
+		System.out.print("[4] - Divisão ");
+		System.out.println();
+		System.out.print("Escolha uma opção: ");
 		try {
 			BufferedReader br = new BufferedReader(
 			new InputStreamReader(System.in));
-			C = Integer.parseInt(br.readLine()); }  
+			OPCAO = Integer.parseInt(br.readLine()); }  
 			catch (Exception e) {
-				C = 0;
+			OPCAO = 0;
 			}
 		
-		   //esse símbolo ^ inverte o resultado lógico
-		if( !(C>5))
-		X = (A + B) * C;
-		else
-	    X = (A - B) * C;
-		
-		System.out.print("O resultado de X equivale a: " + X);
-		
-		System.out.println();
+		if(OPCAO == 1)
+			R = A + B;
+		if(OPCAO == 2)
+		    R = A - B;
+		if(OPCAO == 3)
+			R = A * B;
+		if(OPCAO == 4)
+			if(B==0)
+			  R = 0;
+			else
+			  R = A / B;			
+			
+		System.out.print("O resultado equivale à " + R);
+	System.out.println();
 	}
 }

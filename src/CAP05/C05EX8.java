@@ -3,11 +3,11 @@ package CAP05;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class C05EX7 {
+public class C05EX8 {
 
 	public static void main(String[] args) {
 		
-		int A, B, C, X;
+		int A, B, C;
 		
 	    System.out.println();
 	    
@@ -38,14 +38,16 @@ public class C05EX7 {
 				C = 0;
 			}
 		
-		   //esse símbolo ^ inverte o resultado lógico
-		if( !(C>5))
-		X = (A + B) * C;
+		if(A<B+C && B<C+A && C<A+B)
+			if(A==B && B==C)
+				System.out.print("Triangulo Equilatero");
+		    else
+		    	if(A==B || A==C || C==B)
+			   System.out.print("Triangulo Isosceles");
+		        else
+			   System.out.print("Triangulo Escaleno");
 		else
-	    X = (A - B) * C;
-		
-		System.out.print("O resultado de X equivale a: " + X);
-		
-		System.out.println();
+		System.out.print("Os valores não formam um triangulo ");
+	System.out.println();
 	}
 }
