@@ -5,57 +5,48 @@ public class C05EX10 {
 
 	public static void main(String[] args) {
 		
-		float A, B, R = 0;
-		int OPCAO;
+		int MES;
 		
 	    System.out.println();
 	    
-		System.out.print("Entre o valor <A>: ");
+		System.out.print("Entre o valor referente a um MES: ");
 		try {
 			BufferedReader br = new BufferedReader(
 			new InputStreamReader(System.in));
-			A = Integer.parseInt(br.readLine()); }  
+			MES = Integer.parseInt(br.readLine()); }  
 			catch (Exception e) {
-				A = 0;
-			}
-		
-		System.out.print("Entre o valor <B>: ");
-		try {
-			BufferedReader br = new BufferedReader(
-			new InputStreamReader(System.in));
-			B = Integer.parseInt(br.readLine()); }  
-			catch (Exception e) {
-				B = 0;
+			MES = 0;
 			}
 		
 		System.out.println();
-		System.out.print("[1] - Adição");
-		System.out.print("[2] - Subtração ");
-		System.out.print("[3] - Multiplicação ");
-		System.out.print("[4] - Divisão ");
-		System.out.println();
-		System.out.print("Escolha uma opção: ");
-		try {
-			BufferedReader br = new BufferedReader(
-			new InputStreamReader(System.in));
-			OPCAO = Integer.parseInt(br.readLine()); }  
-			catch (Exception e) {
-			OPCAO = 0;
-			}
 		
-		if(OPCAO == 1)
-			R = A + B;
-		if(OPCAO == 2)
-		    R = A - B;
-		if(OPCAO == 3)
-			R = A * B;
-		if(OPCAO == 4)
-			if(B==0)
-			  R = 0;
+		if(MES == 1)
+			System.out.print("Janeiro");
+		else
+			if(MES == 2)
+			System.out.print("Fevereiro");
+			else	if(MES == 3)
+			System.out.print("Março");
+			else	if(MES == 4)
+				System.out.print("Abril");
+			else	if(MES == 5)
+				System.out.print("Maio");
+			else if(MES == 6)
+				System.out.print("Junho");
+			else		if(MES == 7)
+				System.out.print("Julho");
+			else	if(MES == 8)
+				System.out.print("Agosto");
+			else if(MES == 9)
+				System.out.print("Setembro");
+			else	if(MES == 10)
+				System.out.print("Outubro");
+			else if(MES == 11)
+				System.out.print("Novembro");
+			else	if(MES == 12)
+					System.out.print("Dezembro");		
 			else
-			  R = A / B;			
-			
-		System.out.print("O resultado equivale à " + R);
+		System.out.print("Mês inválido ");
 	System.out.println();
 	}
 }

@@ -3,11 +3,11 @@ package CAP05;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class C05EX3 {
+public class C05EX02 {
 
 	public static void main(String[] args) {
 		
-		int A, B, R;
+		int A, B, X;
 		
 		
 	    System.out.println();
@@ -30,12 +30,12 @@ public class C05EX3 {
 		B = 0;
 		}
         
-		R = A + B;
-		System.out.println();
-		if( R > 10)
-			System.out.print("Resultado igual à " + R + ", ultrapassa o valor de dez.");
-			else
-	    System.out.print("Resultado igual à " + R + ", não ultrapassa o valor de dez. ");
+		if( A > B){
+		X = A;
+		A = B;
+		B = X;
+		}
+	    System.out.print("Valores ordenados são: " + A + " e " + B);
 	    System.out.println();
 	}
 }

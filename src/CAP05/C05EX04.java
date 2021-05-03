@@ -3,7 +3,7 @@ package CAP05;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class C05EX4 {
+public class C05EX04 {
 
 	public static void main(String[] args) {
 		

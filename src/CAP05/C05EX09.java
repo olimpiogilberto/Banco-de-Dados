@@ -1,7 +1,7 @@
 package CAP05;
 
 import java.io.*;
-public class C05EX9 {
+public class C05EX09 {
 
 	public static void main(String[] args) {
 		

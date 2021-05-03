@@ -3,59 +3,42 @@ package CAP05;
 import java.io.*;
 public class C05EX15 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
-		float A, B, R = 0;
-		int OPCAO;
+		int DIVIDENDO, DIVISOR, QUOCIENTE;
 		
 	    System.out.println();
 	    
-		System.out.print("Entre o valor <A>: ");
+		System.out.print("Entre o valor do dividendo: ");
 		try {
 			BufferedReader br = new BufferedReader(
 			new InputStreamReader(System.in));
-			A = Integer.parseInt(br.readLine()); }  
+			DIVIDENDO = Integer.parseInt(br.readLine()); }  
 			catch (Exception e) {
-				A = 0;
+			DIVIDENDO = 0;
 			}
 		
-		System.out.print("Entre o valor <B>: ");
+		System.out.print("Entre o valor do divisor: ");
 		try {
 			BufferedReader br = new BufferedReader(
 			new InputStreamReader(System.in));
-			B = Integer.parseInt(br.readLine()); }  
+			DIVISOR = Integer.parseInt(br.readLine()); }  
 			catch (Exception e) {
-				B = 0;
+			DIVISOR = 0;
 			}
 		
+		try{
+			  QUOCIENTE = DIVIDENDO / DIVISOR;			
+		 if(DIVISOR == 0)	
+			 throw new Exception();
+		System.out.print("O resultado equivale à " + QUOCIENTE);
 		System.out.println();
-		System.out.print("[1] - Adição");
-		System.out.print("[2] - Subtração ");
-		System.out.print("[3] - Multiplicação ");
-		System.out.print("[4] - Divisão ");
-		System.out.println();
-		System.out.print("Escolha uma opção: ");
-		try {
-			BufferedReader br = new BufferedReader(
-			new InputStreamReader(System.in));
-			OPCAO = Integer.parseInt(br.readLine()); }  
-			catch (Exception e) {
-			OPCAO = 0;
-			}
-		
-		if(OPCAO == 1)
-			R = A + B;
-		if(OPCAO == 2)
-		    R = A - B;
-		if(OPCAO == 3)
-			R = A * B;
-		if(OPCAO == 4)
-			if(B==0)
-			  R = 0;
-			else
-			  R = A / B;			
+		}
+		catch (ArithmeticException ae){
+			System.out.println();
+			System.out.print("Erro de divisão por zero. " );
+			System.out.println();
 			
-		System.out.print("O resultado equivale à " + R);
-	System.out.println();
+		}
 	}
 }
